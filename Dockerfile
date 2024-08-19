@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     default-libmysqlclient-dev \
     gcc \
     libpq-dev \
+    libgl1-mesa-glx \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR / 
 COPY ./requirements.txt /requirements.txt
