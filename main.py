@@ -13,7 +13,7 @@ CORS(app)
 @app.route('/api/facialreco')
 def FacialReco():
 
-    HOSTNAME = "192.168.1.18"
+    HOSTNAME = "192.168.1.31"
     USERNAME = "ftp-user"
     PASSWORD = "ftpuser"
 
@@ -23,10 +23,10 @@ def FacialReco():
     sfr = SimpleFacerec()
 
     try:
-        connection = mysql.connector.connect(host='localhost',
+        connection = mysql.connector.connect(host='192.168.1.31',
                                              database='erppro',
                                              user='root',
-                                             password='',
+                                             password='guessitplease',
                                              port="3306")
 
         cursor = connection.cursor()
