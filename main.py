@@ -64,8 +64,9 @@ def FacialReco():
     # Encoded known faces
 
     # Load camera
-    cap = cv2.VideoCapture()
-    cap.open(0, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(0)
+    
+    
 
     while True:
         ret, frame = cap.read()
